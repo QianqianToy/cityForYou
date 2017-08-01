@@ -1,0 +1,98 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp layeredPane1::l::529:x}"
+			"$verticalGroup": "par l {comp layeredPane1::l::361:x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JLayeredPane", new FormLayoutManager( class javax.swing.JLayeredPane ) ) {
+				name: "layeredPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::73:x, par t {seq t {par l {seq t {par l {comp label2::l:p::p, comp label4::l:p::p}, space :p:47:p}, seq t {par l {comp label3:::p::p, comp label5:::p::p}, space :p:49:p}}, par l {comp textField9:::p:173:p, comp textField8:::p:173:p, comp textField7:::p:173:p, comp textField6:::p:173:p}, space :p:142:p}, seq t {comp button3:::p::p, space :p:80:p, comp button4:::p::p, space :p:130:p}}}}"
+					"$verticalGroup": "par l {seq l {space ::119:x, par b {comp label2::b:p::p, comp textField6::b:p::p}, space :::p, par b {comp label4::b:p::p, comp textField7::b:p::p}, space :p:5:p, par b {comp label5::b:p::p, comp textField8::b:p::p}, space u:::p, par b {comp textField9::b:p::p, comp label3::b:p::p}, space :::p, par b {comp button3::b:p::p, comp button4::b:p::p}, space :p:19:p}}"
+				} ) {
+					name: "panel2"
+					"opaque": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "用户名："
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "性别："
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "手机号："
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "密码："
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField6"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "memberActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField7"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField8"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField9"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "确定"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "quedingActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"text": "取消"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "quxiaoActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "quxiaoActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 10
+					"y": 20
+					"height": 310
+					"width": 505
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {comp label6:::p::p, space :0:0:x}}"
+					"$verticalGroup": "par l {seq l {comp label6::::370:x, space :::p}}"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\merc\\merc\\picture\\A7Z(6E5NZZ]{_MTGGI~9_MP.png" )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 0
+					"width": 530
+					"height": 370
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 545, 400 )
+		} )
+	}
+}

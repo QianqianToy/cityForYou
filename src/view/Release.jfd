@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:407:p, comp label1:::p:398:p, space ::393:x}, seq t {par t {seq {space :0:1080:x, comp button1:::p:103:p}, seq {par l {seq {par l {seq {space :p:14:p, par t {comp label9:::p:116:p, comp label8:::p:116:p, comp label13:::p:116:p}}, seq t {space :::p, comp label14:::p:116:p}}, space :30::x}, seq t {space :0:11:x, par t {comp label16:::p:116:p, comp label15:::p:116:p, comp label17::t:p:116:p}, space u:::p}}, par l:::p {comp textField1::l:p:363:p, comp comboBox1::l:p:363:p, comp textField5::l:p:363:p, comp textField6::l:p:363:p, comp textField7::l:p:363:p, comp textField8::l:p:363:p, comp textField9::l:p:363:p}, space ::148:x, par l {comp scrollPane1:::p:533:p, comp label10:::p:116:p}}}, space :p:15:p}}"
+			"$verticalGroup": "par l {seq {par l {seq l {space :p:68:p, par b {comp textField1::b:p::p, comp label8::b:p:34:p}, space :::p, par l {comp comboBox1:::p:34:p, comp label9:::p:34:p}, space s:::p, par b {comp textField5::b:p::p, comp label13::b:p:34:p}, space :p:22:p, par b {comp textField6::b:p::p, comp label14::b:p:34:p}, space s:::p, par b {comp textField7::b:p::p, comp label15::b:p:34:p}, space s:::p, par b {comp textField8::b:p::p, comp label16::b:p:34:p}, space :p:23:p, par b {comp textField9::b:p::p, comp label17::b:p:34:p}}, seq l {space s:::p, comp label1:::p:31:p, space :p::p, comp label10:::p:34:p, space :::p, comp scrollPane1:::p:368:p}}, space :::p, comp button1:::p::p, space ::13:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "                            欢迎来到任务发布系统！！！"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "任务名称："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "任务类型："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "任务内容描述："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "任务发布时间："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "任务截止时间："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"text": "雇主地址（选填）："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"text": "任务悬赏金额："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+				"text": "任务违约罚款："
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField7"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField8"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField9"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "提交"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {space :0:0:x}"
+				"$verticalGroup": "par l {space :0:0:x}"
+			} ) {
+				name: "panel1"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "商标注册"
+					addElement( "商标注册" )
+					addElement( "开办公司" )
+					addElement( "人力资源" )
+					addElement( "职业培训" )
+					addElement( "LOGO设计" )
+					addElement( "VI设计" )
+					addElement( "广告设计" )
+					addElement( "视频宣传" )
+					addElement( "商品包装" )
+					addElement( "app" )
+					addElement( "微信开发" )
+					addElement( "UI设计" )
+					addElement( "个人画像" )
+					addElement( "翻译文献" )
+					addElement( "取名" )
+					addElement( "生活摄影" )
+					addElement( "电商推广" )
+					addElement( "网络推广" )
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 1200, 535 )
+		} )
+	}
+}

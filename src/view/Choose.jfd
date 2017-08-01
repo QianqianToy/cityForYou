@@ -1,0 +1,36 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:60:p, comp button1:::p::p, space :::x, comp button2:::p::p, space :p:217:p}, seq t {space :::x, comp scrollPane1:::p:1001:p, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane1:::p:135:p, space :p:42:p, par b {comp button1::b:p::p, comp button2::b:p::p}, space :0:86:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "接受"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "返回"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 45, 5 )
+			"size": new java.awt.Dimension( 855, 335 )
+		} )
+	}
+}

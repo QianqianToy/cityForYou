@@ -1,0 +1,28 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::195:x, comp label1:::p:193:p, space :p:136:p}, seq {par l {seq {space :p:102:p, comp textField1:::p:301:p}, seq l {space :p:211:p, comp button1:::p:67:p}}, space ::121:x}}"
+			"$verticalGroup": "par l {seq l {space :p:15:p, comp label1:::p:26:p, space s:::p, comp textField1:::p::p, space :p:31:p, comp button1:::p::p, space ::38:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "请在此删除敏感字"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "删除"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 540, 225 )
+		} )
+	}
+}

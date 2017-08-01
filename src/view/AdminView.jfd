@@ -1,0 +1,224 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane10"
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "tabbedPane10StateChanged", true ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp tabbedPane11::l:::x}"
+					"$verticalGroup": "par l {comp tabbedPane11::l:::x}"
+				} ) {
+					name: "panel12"
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane11"
+						"tabPlacement": 2
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollPane9::::557:x, seq l {space :p:11:p, comp label5:::p:99:p, space :::p, comp scrollPane10:::p:161:p, space :p:31:p, comp button4:::p:71:p, space :::p, comp button5:::p:68:p, space :0:104:x}}, space :::p}}"
+							"$verticalGroup": "par l {seq {space :::p, par t:::p {comp label5::l::28:x, par b:l {comp button4::b::28:x, comp button5::b::28:x}, comp scrollPane10::t::28:x}, space :p:11:p, comp scrollPane9::::336:x, space :::p}}"
+						} ) {
+							name: "panel13"
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane9"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table7"
+								} )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label5"
+								"text": "请输入用户名："
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane10"
+								add( new FormComponent( "javax.swing.JTextArea" ) {
+									name: "textArea3"
+								} )
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button4"
+								"text": "查找"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button5"
+								"text": "删除"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "用户信息"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "用户管理"
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane12"
+					"tabPlacement": 2
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {comp scrollPane11::l::533:x}"
+						"$verticalGroup": "par l {seq t {space :0:3:x, comp scrollPane11:::p:384:p}}"
+					} ) {
+						name: "panel20"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane11"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table8"
+							} )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "查看待接受任务"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane12::::521:x, space :::p}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp scrollPane12:::p:399:p, space :::x}}"
+					} ) {
+						name: "panel21"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane12"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table9"
+							} )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "查看已接受任务"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane13::::521:x, space :::p}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp scrollPane13::::375:x, space :::p}}"
+					} ) {
+						name: "panel22"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane13"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table10"
+							} )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "查看历史任务"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "任务管理"
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane13"
+					"tabPlacement": 2
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane14::::557:x, space :::p}, seq l {space :p:14:p, comp label1:::p::p, space s:::p, comp textArea1:::p:177:p, space :p:50:p, comp button1:::p:89:p, space ::113:x}}"
+						"$verticalGroup": "par l {seq t {space :::x, par l {comp label1:::p:35:p, par t:l::p {comp button1::l::31:x, comp textArea1::l::31:x}}, space :::x, comp scrollPane14:::p:337:p, space :::p}}"
+					} ) {
+						name: "panel23"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane14"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table11"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "请输入哦公告编号："
+						} )
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea1"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button1"
+							"text": "删除"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "查看公告"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, par t {comp button6:::p:98:p, par l {comp scrollPane15:::p:468:p, comp label6:::p:122:p}}, space ::95:x}}"
+						"$verticalGroup": "par l {seq {space :::p, comp label6:::p:29:p, space :::p, comp scrollPane15:::p:242:p, space :p:29:p, comp button6:::p::p, space ::42:x}}"
+					} ) {
+						name: "panel24"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "请输入公告内容："
+							"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane15"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "textArea4"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button6"
+							"text": "发布"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "发布公告"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "公告管理"
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane14"
+					"tabPlacement": 2
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane16::::557:x, space :::p}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp scrollPane16:::p:384:p, space :::x}}"
+					} ) {
+						name: "panel25"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane16"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table12"
+							} )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "查看投诉"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "投诉管理"
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane1"
+					"tabPlacement": 2
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {space :::p, comp scrollPane1::::551:x}, seq t {space ::264:x, comp button8:::p::p, space :p:59:p, comp button3:::p::p, space :p:50:p, comp button7:::p::p, space :p:22:p}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:273:p, space ::52:x, par b {comp button3::b:p::p, comp button7::b:p::p, comp button8::b:p::p}, space :p:23:p}}"
+					} ) {
+						name: "panel1"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table1"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button3"
+							"text": "添加"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button7"
+							"text": "删除"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button8"
+							"text": "刷新"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "敏感字管理"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "敏感字管理"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 35, 0 )
+			"size": new java.awt.Dimension( 650, 455 )
+		} )
+	}
+}
